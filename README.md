@@ -152,7 +152,9 @@ A card with a background image:
 </div>
 
 ```
+
 ### Buttons
+
 Normal buttons with different colours:
 
 ```html
@@ -200,3 +202,87 @@ Disabled buttons:
 <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
 ```
 
+### Forms
+
+A basic form with all the major input types.
+
+```html
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="inputPassword5" class="form-label">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+          <div id="passwordHelpBlock" class="form-text">
+            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="disabledSelect" class="form-label">Selection menu</label>
+          <select id="disabledSelect" class="form-select">
+            <option>First Option</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleDataList" class="form-label">Datalist example</label>
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+          </datalist>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+```
+
+A form with deactivated inputs:
+
+```html
+<form>
+  <fieldset disabled>
+    <legend>Disabled fieldset example</legend>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Disabled select menu</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Can't check this
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+```
+
+A shearch bar:
+
+```html
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+      </div>
+```
