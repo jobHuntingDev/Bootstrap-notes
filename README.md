@@ -1,4 +1,4 @@
-# A Bootstrap guide 
+# A Bootstrap guide
 
 ## Installing
 
@@ -110,3 +110,93 @@ A navbar with a log,links and login/signup buttons:
         </div>
       </nav>
 ```
+
+### Cards
+
+A basic card:
+
+```html
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+```
+
+A card with a image header:
+
+```html
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+```
+
+A card with a background image:
+
+```html
+<div class="card text-bg-dark">
+  <img src="..." class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+  </div>
+</div>
+
+```
+### Buttons
+Normal buttons with different colours:
+
+```html
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+```
+
+Outline buttons also in different colours:
+
+```html
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+```
+
+A large button:
+
+```html
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+```
+
+A small button:
+
+```html
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+```
+
+Disabled buttons:
+
+```html
+<button type="button" class="btn btn-primary" disabled>Primary button</button>
+<button type="button" class="btn btn-secondary" disabled>Button</button>
+<button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
+<button type="button" class="btn btn-outline-secondary" disabled>Button</button>
+```
+
